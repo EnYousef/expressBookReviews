@@ -18,7 +18,7 @@ public_users.post("/register", (req,res) => {
         }  
         return res.status(200).json({message:"this username already useit!"});
     }
-    return res.status(200).json({message:"make sure to send all data!"});
+    return res.status(200).json({message:"make sure to send all usernmae and password"});
 });
 public_users.post("/users",(req,res)=>{
     res.json(users)
